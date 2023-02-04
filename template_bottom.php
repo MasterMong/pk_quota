@@ -1,3 +1,17 @@
+<pre>
+--- SESSION ----------------
+<?php
+print_r($_SESSION);
+?>
+--- POST ----------------
+<?php
+print_r($_POST);
+?>
+--- GET ----------------
+<?php
+print_r($_GET);
+?>
+</pre>
     </main>
     <footer style="border-top: 2px solid var(--bs-pink);background: #fff5f5;">
         <div class="container">
