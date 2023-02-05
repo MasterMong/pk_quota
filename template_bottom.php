@@ -55,3 +55,6 @@ print_r($_GET);
 </body>
 
 </html>
+<?php
+    session_write_close();
+?>

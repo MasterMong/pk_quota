@@ -1,7 +1,9 @@
 <?php include('template_top.php'); ?>
 <?php
 if (empty($_SESSION)) {
-    header('Location:regis.php');
+    // header('Location:regis.php');
+    echo '<script type="text/javascript"> window.location = "regis.php" </script>';
+    die();
 } else {
     $sid = $_SESSION['sid'];
     $sql = "SELECT `sid`, `room`, `no`, `prefix`, `f_name`, `l_name`, `GPAX`, `GAP_MAT`, `GPA_SCI`, `ungrade`, `type_code`  FROM students

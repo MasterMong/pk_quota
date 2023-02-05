@@ -30,6 +30,9 @@
                         <li class="nav-item"><a class="nav-link" href="account.php"><i class="far fa-edit"></i>&nbsp;สมัครเรียน</a></li>
                         <li class="nav-item"><a class="nav-link" href="students.php"><i class="far fa-list-alt"></i>&nbsp;รายชื่อผู้สมัคร</a></li>
                         <li class="nav-item"><a class="nav-link" href="regulations.php"><i class="fas fa-book"></i>&nbsp;อ่านระเบียบการ</a></li>
+                        <?php if(!empty($_SESSION)) { ?>
+                        <li class="nav-item"><a class="nav-link" href="logout.php"><i class="fas fa-sign-out-alt"></i>&nbsp;ออกจากระบบ</a></li>
+                        <?php } ?>
                         <li class="nav-item"></li>
                     </ul>
                 </div>

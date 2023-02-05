@@ -1,8 +1,8 @@
 <?php include('template_top.php'); ?>
 <?php
 if (!empty($_SESSION)) {
-    session_destroy();
-    session_write_close();
+    echo '<script type="text/javascript"> window.location = "account.php" </script>';
+    die();
 }
 if (!empty($_POST)) {
     $sid = $_POST['sid'];
@@ -16,7 +16,9 @@ if (!empty($_POST)) {
         $_SESSION = $result;
         session_write_close();
 
-        header('Location:account.php');
+        // header('Location:account.php');
+        echo '<script type="text/javascript"> window.location = "account.php" </script>';
+        die();
     }
 }
 ?>

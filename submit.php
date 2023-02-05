@@ -35,7 +35,9 @@ if (empty($_POST['type']) or empty($_SESSION)) {
         // Check if update is successful
         if ($query) {
             // Update successfully
-            header('Location:account.php');
+            // header('Location:account.php');
+            echo '<script type="text/javascript"> window.location = "account.php" </script>';
+            die();
         } else {
             // Update failed
             die("Failed to update student information");

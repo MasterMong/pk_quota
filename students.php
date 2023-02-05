@@ -22,6 +22,7 @@
             <thead>
                 <tr class="text-center" style="background: #ffe3e3;border-bottom: 2px solid rgb(0,0,0);">
                     <th style="width: 100px;">ลำดับ</th>
+                    <th>รหัสนักเรียน</th>
                     <th>ชื้อ</th>
                     <th style="width: 100px;">ห้อง</th>
                     <th>เลขที่</th>
@@ -40,7 +41,7 @@
                 $sql = "SELECT * FROM students ORDER BY room ASC, no ASC";
                 if (!empty($selected_room)) {
                     $room = $selected_room;
-                    $sql = "SELECT * FROM students WHERE room = '$room'";
+                    $sql = "SELECT * FROM students WHERE room = '$room' ORDER BY no ASC";
                 }
                 $count = 1;
                 $query = query($sql);
@@ -48,6 +49,7 @@
                 ?>
                     <tr class="text-black">
                         <td class="text-center"><?php echo $count ?></td>
+                        <td class="text-center"><?php echo $row->sid ?></td>
                         <td><?php echo $row->prefix . $row->f_name . " " . $row->l_name ?></td>
                         <td class="text-center"><?php echo $row->room ?></td>
                         <td class="text-center"><?php echo $row->no ?></td>

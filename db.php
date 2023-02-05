@@ -1,7 +1,4 @@
 <?php
-    // ทำหน้าเว็บให้เสร็จก่อน
-    // header('Content-Type: text/html; charset=utf-8');
-
     $host = '206.189.47.16';
     $username = 'pk_quota66';
     $password = 'qwer';

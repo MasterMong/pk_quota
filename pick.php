@@ -38,7 +38,7 @@ if (empty($_POST) or $_POST['agree'] != 'on') {
                 }
             ?>
                 <!-- Start: col -->
-                <div data-aos="fade-up" class="col-md-6 col-lg-4 mt-2">
+                <div data-aos="fade-up" class="col-md-6 col-lg-4 mt-2 mb-4">
                     <div class="card" style="box-shadow: 5px 5px #ffbddb;min-height: 300px;border-radius: 0px;border: 2px solid rgb(0,0,0);"><img class="card-img-top w-100 d-block" src="assets/img/<?php echo $row->img_cover; ?>">
                         <div class="card-body d-xl-flex align-items-xl-end">
                             <div style="width: 100%;">
