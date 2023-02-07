@@ -10,15 +10,15 @@ print_r($_POST);
 --- GET ----------------
 <?php
 print_r($_GET);
-?>
-</pre> -->
+?> -->
+</pre>
     </main>
     <footer style="border-top: 2px solid var(--bs-pink);background: #fff5f5;">
         <div class="container">
             <!-- Start: row -->
             <div class="row" style="padding: 10px;">
                 <!-- Start: col -->
-                <div class="d-xl-flex justify-content-xl-start align-items-xl-end col-lg-4" style="padding: -2px;">
+                <div class="d-xl-flex justify-content-xl-start align-items-xl-center col-lg-4" style="padding: -2px;">
                     <div class="d-flex justify-content-center"><img src="assets/img/logo%20square.png" style="width: 100px;height: 100px;"></div>
                     <div>
                         <h5 class="fw-semibold"><strong>โรงเรียนภูเขียว</strong></h5>
@@ -55,6 +55,3 @@ print_r($_GET);
 </body>
 
 </html>
-<?php
-    session_write_close();
-?>
